@@ -1,3 +1,4 @@
+/* Resetting margin and padding, setting box-sizing */
 * {
   margin: 0;
   padding: 0;
@@ -64,19 +65,46 @@ section.home {
   background: url('index-bg.jpg') no-repeat center center/cover;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); 
   padding-top: 30vh;
+  position: relative;
 }
 
-/* .text{
-  padding-bottom: 70rem;
-}  */
+.text-wrapper {
+  position: relative;
+  z-index: 1;
+}
 
+.blurred-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
 
+.text {
+  position: relative;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* Optional: Add background color for readability */
+  border-radius: 10px;
+}
 
+h1 {
+  color: black;
+  font-size: 3.5rem;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+}
 
 #About, #Mission {
-
   padding: 6em 1em 2em;
   background-color: white;
   text-align: center;
@@ -155,7 +183,6 @@ footer {
   z-index: 1000; 
 }
 
-
 section.appointment {
   padding: 6em 1em 2em; 
   background-color: white;
@@ -200,14 +227,4 @@ section.appointment {
 
 .appointment-form input[type="submit"]:hover {
   background-color: #555;
-}
-
-h1{
-  color: black;
-  font-size: 3.5rem;
-}
-
-p2{
-  color: black;
-  font-size: 1.5rem;
 }
