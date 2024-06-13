@@ -1,7 +1,7 @@
 # ZOCC-Medical-Website
  The MyDoc Medical website is a basic creation to enable users to easily and readily access medical care. 
  It eases the need to perform multiple steps for accessing medical services.
-You can access the file [here](https://monikatammineni.github.io/ZOCC-Medical-Website/)
+You can access the live Website here [here](https://github.com/MonikaTammineni/ZOCC-Medical-Website.git)
  
  The services offered are:
  1. Online Ambulance booking
