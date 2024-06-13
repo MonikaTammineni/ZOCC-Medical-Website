@@ -1,4 +1,3 @@
-/* Resetting margin and padding, setting box-sizing */
 * {
   margin: 0;
   padding: 0;
@@ -84,24 +83,14 @@ section.home {
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
-  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  border-radius: 10px; 
 }
 
 .text {
   position: relative;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.1); /* Optional: Add background color for readability */
+  background: rgba(255, 255, 255, 0.1); 
   border-radius: 10px;
-}
-
-h1 {
-  color: black;
-  font-size: 3.5rem;
-}
-
-p {
-  color: black;
-  font-size: 1.5rem;
 }
 
 #About, #Mission {
@@ -227,4 +216,14 @@ section.appointment {
 
 .appointment-form input[type="submit"]:hover {
   background-color: #555;
+}
+
+h1 {
+  color: black;
+  font-size: 3.5rem;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
 }
