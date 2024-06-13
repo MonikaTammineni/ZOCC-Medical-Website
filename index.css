@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: navy;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 5rem;
+}
+
+nav .logo {
+  width: 90px;
+  height: auto;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-list li {
+  margin-left: 1em;
+}
+
+nav .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+section.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('index-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding-top: 30vh;
+}
+
+.text{
+  padding-bottom: 70rem;
+} 
+
+
+
+
+#About, #Mission {
+
+  padding: 6em 1em 2em;
+  background-color: white;
+  text-align: center;
+  padding-top: 38vh;
+  font-size: 1.5rem;
+}
+
+#About h2, #Mission h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+#About p, #Mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+.services {
+  padding: 6em 1em 2em; 
+  background-color: #fff;
+}
+
+.services-heading {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.service-title {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.service-image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+section.contact {
+  padding: 6em 1em 2em; 
+  background-color: #adbad6;
+  color: white;
+  text-align: center;
+  height:100vh;
+  padding-top: 45vh;
+}
+
+.contact-heading {
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  z-index: 1000; 
+}
+
+
+section.appointment {
+  padding: 6em 1em 2em; 
+  background-color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.appointment-heading {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.appointment-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.appointment-form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="tel"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form input[type="submit"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.appointment-form input[type="submit"] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+h1{
+  color: black;
+  font-size: 3.5rem;
+}
+
+p2{
+  color: black;
+  font-size: 1.5rem;
+}
